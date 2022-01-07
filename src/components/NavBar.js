@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import logo from '../assets/logo.png';
-import menu from '../assets/menu.png';
-import menuClose from '../assets/menuClose.png';
-import search from '../assets/search.png';
+import logo from '../assets/logo.svg';
+import menu from '../assets/menu.svg';
+import menuClose from '../assets/xmark.svg';
+import search from '../assets/search.svg';
 
 const NavBar = () => {
+	// useState Hook to add functionality to the hamburger menu on mobile devices
 	const [menuOpen, setMenuOpen] = useState(false);
 	const handleToggle = () => {
 		setMenuOpen((prev) => !prev);
@@ -15,9 +16,9 @@ const NavBar = () => {
 	};
 
 	return (
-		<nav className='bg-gray-50'>
+		<nav className='bg-gray-50 font-rob'>
 			{/* Nav Mobile */}
-			<section className='grid grid-cols-3 p-4 '>
+			<section className='grid grid-cols-7 lg:hidden p-4 '>
 				<button onClick={handleToggle}>
 					{menuOpen ? (
 						<img
@@ -33,7 +34,7 @@ const NavBar = () => {
 						/>
 					)}
 				</button>
-				<img className='justify-self-center' src={logo} alt='mix-it-up logo' />
+				<img className='col-span-5 justify-self-center w-24' src={logo} alt='mix-it-up logo' />
 				<img className='cursor-pointer justify-self-end self-center' src={search} alt='search icon' />
 			</section>
 
@@ -53,15 +54,18 @@ const NavBar = () => {
 			</section>
 
 			{/* Nav Desktop */}
-			<section className='hidden lg:grid lg:grid-cols-2 '>
-				<ul className='grid grid-cols-2 gap-8 justify-self-end mr-10 lg:mr-56 font-rob uppercase'>
-					<li>
-						<a href='#recipes'>Drink Recipes</a>
-					</li>
-					<li>
-						<a href='#login'>Login/Sign Up</a>
-					</li>
-				</ul>
+			<section className='hidden lg:grid grid-cols-5 items-center my-0 mx-auto max-w-4xl h-20'>
+				<img className='col-span-3 justify-self-start w-40 h-16' src={logo} alt='mix-it-up logo' />
+				<article className='col-span-2 justify-self-end'>
+					<ul className='grid grid-cols-2 gap-8 uppercase'>
+						<li>
+							<a href='#recipes'>Drink Recipes</a>
+						</li>
+						<li>
+							<a href='#login'>Login/Sign Up</a>
+						</li>
+					</ul>
+				</article>
 			</section>
 		</nav>
 	);
