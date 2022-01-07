@@ -1,10 +1,9 @@
-import background from '../assets/background.png';
-
 import './Hero.scss';
 
 const Hero = () => (
-	<header className='max-w-screen max-h-screen'>
-		<img className='w-full bg-cover' src={background} alt='' />
+	<header className='relative'>
+		<article className='bg_image'></article>
+		<article className='absolute top-0 left-0 h-full w-full bg-black opacity-70'></article>
 	</header>
 );
 
