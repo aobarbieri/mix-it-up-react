@@ -1,9 +1,11 @@
 import './Hero.scss';
+import MakeCocktail from './MakeCocktail';
 
 const Hero = () => (
-	<header className='relative'>
-		<article className='bg_image'></article>
-		<article className='absolute top-0 left-0 h-full w-full bg-black opacity-70'></article>
+	<header className='relative bg_image'>
+		<article className='absolute h-full w-full bg-black opacity-70 font-rob'>
+			<MakeCocktail />
+		</article>
 	</header>
 );
 

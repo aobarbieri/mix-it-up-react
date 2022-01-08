@@ -16,7 +16,7 @@ const NavBar = () => {
 	};
 
 	return (
-		<nav className='bg-gray-50 font-rob'>
+		<nav className='font-rob'>
 			{/* Nav Mobile */}
 			<section className='grid grid-cols-7 lg:hidden p-4 '>
 				<button onClick={handleToggle}>
