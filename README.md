@@ -1,3 +1,3 @@
 Mix it Up!
 
-...typing
+building project...

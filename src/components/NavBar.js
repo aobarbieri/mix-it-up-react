@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 import logo from '../assets/logo.svg';
-import menu from '../assets/menu.svg';
-import menuClose from '../assets/xmark.svg';
-import search from '../assets/search.svg';
+import hamburgerMenu from '../assets/icons/menu.svg';
+import xMark from '../assets/icons/xmark.svg';
+import search from '../assets/icons/search-black.svg';
+import pinkSelection from '../assets/icons/pink-line_selection.svg';
 
 const NavBar = () => {
 	// useState Hook to add functionality to the hamburger menu on mobile devices
@@ -23,13 +24,13 @@ const NavBar = () => {
 					{menuOpen ? (
 						<img
 							className='menu-btn cursor-pointer self-center lg:hidden'
-							src={menuClose}
+							src={xMark}
 							alt='hamburger menu icon'
 						/>
 					) : (
 						<img
 							className='menu-btn cursor-pointer self-center lg:hidden'
-							src={menu}
+							src={hamburgerMenu}
 							alt='hamburger menu icon'
 						/>
 					)}
@@ -54,12 +55,21 @@ const NavBar = () => {
 			</section>
 
 			{/* Nav Desktop */}
-			<section className='hidden lg:grid grid-cols-5 items-center my-0 mx-auto max-w-4xl h-20'>
-				<img className='col-span-3 justify-self-start w-40 h-16' src={logo} alt='mix-it-up logo' />
+			<section className='hidden lg:grid grid-cols-3 items-center my-0 mx-auto max-w-4xl h-20'>
+				<img className=' justify-self-start w-40 h-16' src={logo} alt='mix-it-up logo' />
 				<article className='col-span-2 justify-self-end'>
-					<ul className='grid grid-cols-2 gap-8 uppercase'>
+					<ul className='flex flex-row justify-end uppercase text-sm'>
 						<li>
-							<a href='#recipes'>Drink Recipes</a>
+							<a href='#calculator'>
+								Drink Calculator
+								<img className='w-32' src={pinkSelection} alt='text decoration' />
+							</a>
+						</li>
+						<li className='ml-12'>
+							<a href='#recipes'>Recipes</a>
+						</li>
+						<li className='mx-12'>
+							<a href='#definitions'>Definitions</a>
 						</li>
 						<li>
 							<a href='#login'>Login/Sign Up</a>

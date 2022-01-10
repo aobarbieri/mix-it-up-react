@@ -1,6 +1,6 @@
 import ingredients from '../assets/ingredients.svg';
 import yellowLine from '../assets/yellow-line.svg';
-import removebtn from '../assets/xmark.svg';
+import removebtn from '../assets/icons/xmark.svg';
 import searchIcon from '../assets/search-gray.svg';
 
 const Ingredients = () => (
