@@ -1,9 +1,9 @@
 import ingredients from '../assets/ingredients.svg';
 import yellowLine from '../assets/yellow-line.svg';
-
+import removebtn from '../assets/xmark.svg';
 import searchIcon from '../assets/search-gray.svg';
 
-const MakeCocktail = () => (
+const Ingredients = () => (
 	<main className='w-11/12 lg:max-w-4xl my-0 mx-auto text-sm'>
 		{/* Make A Drink Header */}
 		<section className='text-white'>
@@ -17,14 +17,19 @@ const MakeCocktail = () => (
 		<section>
 			<article className='bg-white w-full px-5'>
 				{/* Your Ingredients Header */}
-				<section className='py-10 w-60 h-16 flex flex-col mx-auto'>
+				<section className='pt-10 pb-11 w-60 h-16 flex flex-col mx-auto'>
 					<img className='' src={ingredients} alt='Your Ingredients' />
 					<img className='' src={yellowLine} alt='Yellow Underline Decoration' />
 				</section>
 
 				{/* Selected Ingredients */}
-				<section className='flex flex-col place-content-center bg-gray-50 h-32 my-4'>
-					<p className='text-gray-400 place-self-center'>No Ingredients Selected</p>
+				<section className='flex flex-col bg-gray-50 h-32 my-4'>
+					<section className='flex flex-wrap'>
+						<button className='bg-gray-200 mr-2 mb-2 rounded-full py-1 px-2 border border-gray-300 text-gray-600'>
+							Simple Syrup <img className='inline ml-1 w-3' src={removebtn} alt='remove button' />
+						</button>
+					</section>
+					<p className='text-gray-400 flex-grow place-self-center'>No Ingredients Selected</p>
 				</section>
 
 				{/* Search Ingredients */}
@@ -42,7 +47,7 @@ const MakeCocktail = () => (
 				<section className='pb-32'>
 					<h4 className='font-medium mt-9 mb-1'>Popular Ingredients</h4>
 					<section className='flex flex-wrap'>
-						<button className='mr-2 mb-2 rounded-full py-1 px-2 border border-gray-300 text-gray-600'>
+						<button className='bg-yellow-300 mr-2 mb-2 rounded-full py-1 px-2 border border-gray-300 text-gray-600'>
 							Simple Syrup
 						</button>
 						<button className='mr-2 mb-2 rounded-full py-1 px-2 border border-gray-300 text-gray-600'>
@@ -82,4 +87,4 @@ const MakeCocktail = () => (
 	</main>
 );
 
-export default MakeCocktail;
+export default Ingredients;

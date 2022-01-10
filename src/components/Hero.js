@@ -1,9 +1,9 @@
 import './Hero.scss';
-import MakeCocktail from './MakeCocktail';
+import Ingredients from './Ingredients';
 
 const Hero = () => (
 	<header className='bg_image font-rob'>
-		<MakeCocktail />
+		<Ingredients />
 	</header>
 );
 
