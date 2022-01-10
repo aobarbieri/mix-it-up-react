@@ -1,11 +1,11 @@
-import drinks from '../assets/drinksYouCanMake-logo.svg';
+import drinks from '../assets/images/drinksYouCanMake-logo.svg';
 import pinkLine from '../assets/icons/pink-line.svg';
 import chevron from '../assets/icons/chevron.svg';
 import cubalibre from '../assets/images/drinks/cuba.svg';
 import gintonic from '../assets/images/drinks/gin-tonic.svg';
 
 const Drinks = () => (
-	<article className='bg-gray-50 w-full'>
+	<article className='bg-gray-50 w-full md:w-7/12 md:px-2 lg:px-7'>
 		{/* Drinks You Can Make Section */}
 		<section className='pt-10 pb-11 w-72 h-16 flex flex-col mx-auto'>
 			<img className='' src={drinks} alt='Your Ingredients' />
@@ -18,11 +18,11 @@ const Drinks = () => (
 		</section>
 
 		{/* Drinks Available List showing drinks you can make once ingredients are selected */}
-		<section className=' bg-white mt-6 pb-40'>
-			<table className='w-full'>
+		<section className='mt-6 pb-40'>
+			<table className='bg-white w-full'>
 				{/* Table head */}
 				<thead>
-					<tr className='border-t border-b'>
+					<tr className='border'>
 						<th className='w-1/2 font-medium text-left pl-5 py-4'>
 							Name <img className='inline pl-1 pb-1' src={chevron} alt='chevron drop down' />
 						</th>
@@ -31,7 +31,7 @@ const Drinks = () => (
 					</tr>
 				</thead>
 				{/* Table body */}
-				<tbody className='divide-y'>
+				<tbody className='divide-y border'>
 					<tr>
 						<td className='text-left pl-5 font-medium'>
 							<img className='inline my-2 pr-1' src={cubalibre} alt='drink preview' />
