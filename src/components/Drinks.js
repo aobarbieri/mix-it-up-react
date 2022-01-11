@@ -2,7 +2,7 @@ import drinks from '../assets/images/drinksYouCanMake-logo.svg';
 import pinkLine from '../assets/icons/pink-line.svg';
 import chevron from '../assets/icons/chevron.svg';
 import cubalibre from '../assets/images/drinks/cuba.svg';
-import gintonic from '../assets/images/drinks/gin-tonic.svg';
+import gintonic from '../assets/images/drinks/gin-tonic.jpeg';
 
 const Drinks = () => (
 	<article className='bg-gray-50 w-full md:w-7/12 md:px-2 lg:px-7'>
@@ -17,6 +17,7 @@ const Drinks = () => (
 			<p className='text-gray-400 text-center mt-12'>No Drinks Available from Your Selected Ingredients</p>
 		</section>
 
+		{/* TODO: Change the cuba libre image and its classes */}
 		{/* Drinks Available List showing drinks you can make once ingredients are selected */}
 		<section className='mt-6 pb-40'>
 			<table className='bg-white w-full'>
@@ -34,7 +35,7 @@ const Drinks = () => (
 				<tbody className='divide-y border'>
 					<tr>
 						<td className='text-left pl-5 font-medium'>
-							<img className='inline my-2 pr-1' src={cubalibre} alt='drink preview' />
+							<img className='inline my-2 mr-1 rounded-full w-10' src={cubalibre} alt='drink preview' />
 							Cuba Libre
 						</td>
 						<td className='text-right'>3</td>
@@ -42,7 +43,7 @@ const Drinks = () => (
 					</tr>
 					<tr>
 						<td className='text-left pl-5 font-medium'>
-							<img className='inline my-2 pr-1' src={gintonic} alt='drink preview' />
+							<img className='inline my-2 mr-1 rounded-full w-10' src={gintonic} alt='drink preview' />
 							Gin & Tonic
 						</td>
 						<td className='text-right'>2</td>

@@ -1,10 +1,12 @@
 import './Hero.scss';
 import Ingredients from './Ingredients';
 import Drinks from './Drinks';
+import Recipes from './Recipes';
 
 const Hero = () => (
 	<main className='bg_image font-rob'>
-		<article className='w-11/12 lg:max-w-4xl my-0 mx-auto pb-20 text-sm'>
+		{/* main page */}
+		<article className='hidden w-11/12 lg:max-w-4xl my-0 mx-auto pb-20 text-sm'>
 			{/* Make A Drink Header */}
 			<header className='text-white'>
 				<h1 className='uppercase text-4xl lg:text-6xl text-center md:text-left py-3 md:pt-10'>Make a Drink</h1>
@@ -20,6 +22,11 @@ const Hero = () => (
 				{/* Drinks You Can Make Section */}
 				<Drinks />
 			</section>
+		</article>
+
+		{/* recipes page */}
+		<article className='w-11/12 lg:max-w-4xl my-0 mx-auto pb-20 pt-4'>
+			<Recipes />
 		</article>
 	</main>
 );
