@@ -1,0 +1,1 @@
+/* This component will populate the selected ingredients list inside the Ingredients component*/

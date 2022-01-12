@@ -7,7 +7,7 @@ const Carousel = () => (
 		{/* You May Also Like Section */}
 		<h5 className='mt-6 text-xl'>You May Also Like</h5>
 		<article className='my-3 flex bg-white h-24 w-64 filter drop-shadow-lg'>
-			<img className='mr-3 w-24' src={manhattan} alt='Cocktail preview' />
+			<img className='mr-3 w-24 object-cover' src={manhattan} alt='Cocktail preview' />
 			<section className='text-sm w-40 '>
 				<h6 className='font-bold tracking-wider mt-3'>Manhattan</h6>
 				<p className='my-1 text-gray-700'>
@@ -23,7 +23,7 @@ const Carousel = () => (
 		{/* More x type of drinks Section */}
 		<h5 className='mt-6 text-xl'>More Rum Drinks</h5>
 		<article className='my-3 flex bg-white h-24 w-64 filter drop-shadow-lg'>
-			<img className='mr-3 w-24' src={daiquiri} alt='Cocktail preview' />
+			<img className='mr-3 w-24 object-cover' src={daiquiri} alt='Cocktail preview' />
 			<section className='text-sm w-40'>
 				<h6 className='font-bold tracking-wider mt-3'>Daiquiri</h6>
 				<p className='my-1'>

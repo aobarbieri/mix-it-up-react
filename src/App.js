@@ -1,6 +1,6 @@
-import NavBar from './components/NavBar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import NavBar from './views/NavBar';
+import Hero from './views/Hero';
+import Footer from './views/Footer';
 
 //import { Route } from 'react-router-dom';
 
