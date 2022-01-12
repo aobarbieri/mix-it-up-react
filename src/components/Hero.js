@@ -4,7 +4,7 @@ import Drinks from './Drinks';
 import Recipes from './Recipes';
 
 const Hero = () => (
-	<main className='bg_image font-rob'>
+	<main className='bg_image font-source'>
 		{/* main page */}
 		<article className='hidden w-11/12 lg:max-w-4xl my-0 mx-auto pb-20 text-sm'>
 			{/* Make A Drink Header */}

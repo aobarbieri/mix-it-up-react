@@ -1,5 +1,5 @@
 const Footer = () => (
-	<footer className='bg-black text-xs font-rob text-white'>
+	<footer className='bg-black text-xs font-source text-white'>
 		<section className='my-0 mx-auto w-11/12 md:w-4/5 lg:max-w-4xl'>
 			<ul className='grid md:grid-cols-3 gap-x-8 '>
 				<li className='mt-10 md:my-10'>
