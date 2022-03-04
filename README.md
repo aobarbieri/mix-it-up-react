@@ -1,3 +1,5 @@
 Mix it Up!
 
-building project...
+building project with 💜 using JSX, Twailind, React.
+
+
